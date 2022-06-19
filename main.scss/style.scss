@@ -7,9 +7,18 @@
   list-style: none;
 }
 
+$blue10-color: #111a20;
+$blue20-color: #1c2c35;
+$blue30-color: #243b4a;
+$blue40-color: #416883;
+$blue50-color: #5e8ca7;
+$glow10-color: #b0fbbc;
+$glow20-color: #82f9a1;
+
 // Next steps, import fonts, set up body tag and add project colors
 
 body {
+  background-color: $blue20-color;
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
 }

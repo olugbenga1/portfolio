@@ -27,13 +27,18 @@ body {
 }
 
 header {
-  padding: 1rem;
+  padding: 2rem;
   background-color: $blue10-color;
   position: fixed;
+  top: 0;
   width: 100%;
   nav {
     display: flex;
     justify-content: space-between;
+
+    .logo {
+      color: $glow20-color;
+    }
     .nav-links {
       display: flex;
     }
@@ -47,8 +52,39 @@ header {
       }
 
       li a:hover {
-        border-bottom: 2px solid $glow20-color;
-        padding-bottom: 5px;
+        border-bottom: 3px solid $glow20-color;
+        padding-bottom: 8px;
+      }
+    }
+    .nav-toggle {
+      display: none;
+      a i {
+        color: $text10-color;
+      }
+    }
+  }
+}
+
+.container {
+  padding: 2rem;
+  margin-top: 90px;
+
+  .hero {
+    h1 {
+      color: $glow20-color;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    p {
+      font-weight: 300;
+      margin-top: 20px;
+
+      .twitter {
+        color: #1da1f2;
+      }
+
+      .github {
+        color: $blue50-color;
       }
     }
   }

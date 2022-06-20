@@ -15,14 +15,18 @@ body {
 }
 
 header {
-  padding: 1rem;
+  padding: 2rem;
   background-color: #111a20;
   position: fixed;
+  top: 0;
   width: 100%;
 }
 header nav {
   display: flex;
   justify-content: space-between;
+}
+header nav .logo {
+  color: #82f9a1;
 }
 header nav .nav-links {
   display: flex;
@@ -37,6 +41,32 @@ header nav ul li a {
   color: #ecf8ff;
 }
 header nav ul li a:hover {
-  border-bottom: 2px solid #82f9a1;
-  padding-bottom: 5px;
+  border-bottom: 3px solid #82f9a1;
+  padding-bottom: 8px;
+}
+header nav .nav-toggle {
+  display: none;
+}
+header nav .nav-toggle a i {
+  color: #ecf8ff;
+}
+
+.container {
+  padding: 2rem;
+  margin-top: 90px;
+}
+.container .hero h1 {
+  color: #82f9a1;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.container .hero p {
+  font-weight: 300;
+  margin-top: 20px;
+}
+.container .hero p .twitter {
+  color: #1da1f2;
+}
+.container .hero p .github {
+  color: #5e8ca7;
 }/*# sourceMappingURL=style.css.map */

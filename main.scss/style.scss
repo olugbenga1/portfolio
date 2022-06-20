@@ -14,6 +14,8 @@ $blue40-color: #416883;
 $blue50-color: #5e8ca7;
 $glow10-color: #b0fbbc;
 $glow20-color: #82f9a1;
+$text10-color: #ecf8ff;
+$text20-color: #c9e2f0;
 
 // Next steps, import fonts, set up body tag and add project colors
 
@@ -21,4 +23,33 @@ body {
   background-color: $blue20-color;
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
+  color: $text10-color;
+}
+
+header {
+  padding: 1rem;
+  background-color: $blue10-color;
+  position: fixed;
+  width: 100%;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    .nav-links {
+      display: flex;
+    }
+    ul {
+      display: flex;
+      gap: 2rem;
+      justify-content: flex-end;
+      li a {
+        text-decoration: none;
+        color: $text10-color;
+      }
+
+      li a:hover {
+        border-bottom: 2px solid $glow20-color;
+        padding-bottom: 5px;
+      }
+    }
+  }
 }

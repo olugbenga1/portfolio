@@ -165,7 +165,9 @@ header {
     }
 
     .skills-div:hover {
-      transform: scale(1.08);
+      -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+      transform: scale(1.03);
     }
   }
 }

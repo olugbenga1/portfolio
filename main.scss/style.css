@@ -32,9 +32,21 @@ body h3 {
 body .wrapper {
   margin-top: 5rem;
 }
+body button {
+  border: none;
+  border-radius: 5px;
+  color: #1c2c35;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+body button:hover {
+  background-color: #82f9a1;
+}
 
 header {
-  padding: 2rem;
+  padding: 2rem 3rem;
   background-color: #111a20;
   position: fixed;
   top: 0;
@@ -71,7 +83,7 @@ header nav .nav-toggle a i {
 }
 
 .container {
-  padding: 2rem;
+  padding: 3rem;
   margin-top: 6rem;
 }
 .container .hero {
@@ -86,20 +98,15 @@ header nav .nav-toggle a i {
 .container .hero .github {
   color: #5e8ca7;
 }
-.container .hero button {
-  border: none;
-  border-radius: 5px;
-  color: #1c2c35;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-top: 3rem;
-  padding: 1rem;
-}
-.container .hero button:hover {
-  background-color: #82f9a1;
+.container .projects .card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
 }
 .container .projects .card-wrapper .card {
-  box-shadow: 0px 0px 36px -6px rgba(0, 0, 0, 0.27);
+  border-radius: 5px;
+  box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.27);
   max-width: 100%;
   padding: 2rem;
 }
@@ -109,4 +116,23 @@ header nav .nav-toggle a i {
 }
 .container .projects .card-wrapper .card p i {
   font-size: 1.5rem;
+}
+.container .projects .card-wrapper .card:hover {
+  transform: scale(1.02);
+}
+
+.footer {
+  background-color: #111a20;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem;
+}
+.footer span {
+  margin: 8px;
+}
+.footer span:hover {
+  color: #1da1f2;
+}
+.footer p {
+  font-size: 0.9rem;
 }/*# sourceMappingURL=style.css.map */

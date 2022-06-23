@@ -64,9 +64,10 @@ body {
 header {
   padding: 2rem 3rem;
   background-color: $blue10-color;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
+  z-index: 1;
   nav {
     display: flex;
     justify-content: space-between;
@@ -90,6 +91,11 @@ header {
         border-bottom: 3px solid $glow20-color;
         padding-bottom: 8px;
       }
+
+      li.active {
+        border-bottom: 3px solid $glow20-color;
+        padding-bottom: 8px;
+      }
     }
     .nav-toggle {
       display: none;
@@ -104,7 +110,7 @@ header {
   padding: 3rem;
   margin-top: 6rem;
 
-  .hero {
+  .hero-section {
     line-height: 2.2;
 
     h1 {
@@ -120,7 +126,7 @@ header {
     }
   }
 
-  .projects {
+  .projects-section {
     .card-wrapper {
       display: flex;
       flex-direction: column;
@@ -172,7 +178,7 @@ header {
   }
 }
 
-.footer {
+.footer-section {
   background-color: $blue10-color;
   display: flex;
   justify-content: space-evenly;

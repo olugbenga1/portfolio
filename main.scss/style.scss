@@ -89,7 +89,7 @@ header {
       }
 
       li:hover {
-        border-bottom: 3px solid $glow20-color;
+        border-bottom: 2px solid $glow20-color;
         padding-bottom: 8px;
       }
 
@@ -98,8 +98,8 @@ header {
         color: $text10-color;
       }
 
-      li .active {
-        border-bottom: 3px solid $glow20-color;
+      .active {
+        border-bottom: 2px solid $glow20-color;
         padding-bottom: 8px;
       }
     }
@@ -114,10 +114,10 @@ header {
 
 .container {
   padding: 5rem 3rem;
-  margin-top: 3rem;
 
   .hero-section {
     line-height: 2.2;
+    padding-top: 4rem;
 
     h1 {
       color: $glow20-color;

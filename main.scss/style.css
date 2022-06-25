@@ -73,15 +73,15 @@ header nav ul li {
   padding: 10px 0;
 }
 header nav ul li:hover {
-  border-bottom: 3px solid #82f9a1;
+  border-bottom: 2px solid #82f9a1;
   padding-bottom: 8px;
 }
 header nav ul li a {
   text-decoration: none;
   color: #ecf8ff;
 }
-header nav ul li .active {
-  border-bottom: 3px solid #82f9a1;
+header nav ul .active {
+  border-bottom: 2px solid #82f9a1;
   padding-bottom: 8px;
 }
 header nav .nav-toggle {
@@ -93,10 +93,10 @@ header nav .nav-toggle a i {
 
 .container {
   padding: 5rem 3rem;
-  margin-top: 3rem;
 }
 .container .hero-section {
   line-height: 2.2;
+  padding-top: 4rem;
 }
 .container .hero-section h1 {
   color: #82f9a1;

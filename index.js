@@ -35,15 +35,6 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// navLinks.forEach(function (link) {
-//   link.addEventListener("click", function () {
-//     link.classList.remove("active");
-//     if (link.classList.contains(current)) {
-//       link.classList.add("active");
-//     }
-//   });
-// });
-
 // Add scroll function
 function addScroll(linkId, sectionId) {
   linkId.addEventListener("click", () => {
@@ -65,3 +56,12 @@ addScroll(blogLinkId, blog);
 
 // add scroll to the contact section
 addScroll(contactLinkId, contact);
+
+// javascript to toggle nav menu
+
+const menu = document.querySelector(".menu");
+let menuItems = document.querySelectorAll(".menuItems");
+const navToggle = document.querySelector(".nav-toggle");
+const openIcon = document.querySelector(".open-icon");
+const closeIcon = documemt.querySelector(".close-icon");
+const current = document.querySelector(".active");

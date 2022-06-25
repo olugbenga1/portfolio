@@ -64,7 +64,7 @@ body {
 header {
   padding: 2rem 3rem;
   background-color: $blue10-color;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
@@ -74,6 +74,7 @@ header {
 
     .logo {
       color: $glow20-color;
+      padding: 10px 0;
     }
     .nav-links {
       display: flex;
@@ -82,17 +83,22 @@ header {
       display: flex;
       gap: 2rem;
       justify-content: flex-end;
+
+      li {
+        padding: 10px 0;
+      }
+
+      li:hover {
+        border-bottom: 3px solid $glow20-color;
+        padding-bottom: 8px;
+      }
+
       li a {
         text-decoration: none;
         color: $text10-color;
       }
 
-      li a:hover {
-        border-bottom: 3px solid $glow20-color;
-        padding-bottom: 8px;
-      }
-
-      li.active {
+      li .active {
         border-bottom: 3px solid $glow20-color;
         padding-bottom: 8px;
       }
@@ -107,8 +113,8 @@ header {
 }
 
 .container {
-  padding: 3rem;
-  margin-top: 6rem;
+  padding: 5rem 3rem;
+  margin-top: 3rem;
 
   .hero-section {
     line-height: 2.2;

@@ -44,24 +44,24 @@ window.addEventListener("scroll", () => {
 //   });
 // });
 
-// Add scroll function
-function addScroll(linkId, sectionId) {
-  linkId.addEventListener("click", () => {
-    sectionId.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
-}
+// // Add scroll function
+// function addScroll(linkId, sectionId) {
+//   linkId.addEventListener("click", () => {
+//     sectionId.scrollIntoView({ behavior: "smooth", block: "start" });
+//   });
+// }
 
-// add scroll to projects section
-addScroll(homeLinkId, hero);
+// // add scroll to projects section
+// addScroll(homeLinkId, hero);
 
-// add scroll to projects section
-addScroll(projectsLinkId, projects);
+// // add scroll to projects section
+// addScroll(projectsLinkId, projects);
 
-// add scroll to the skills section
-addScroll(skillsLinkId, skills);
+// // add scroll to the skills section
+// addScroll(skillsLinkId, skills);
 
-// add scroll to the blog section
-addScroll(blogLinkId, blog);
+// // add scroll to the blog section
+// addScroll(blogLinkId, blog);
 
-// add scroll to the contact section
-addScroll(contactLinkId, contact);
+// // add scroll to the contact section
+// addScroll(contactLinkId, contact);

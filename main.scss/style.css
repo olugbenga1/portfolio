@@ -48,8 +48,7 @@ body button:hover {
 header {
   padding: 2rem 3rem;
   background-color: #111a20;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
@@ -60,6 +59,7 @@ header nav {
 }
 header nav .logo {
   color: #82f9a1;
+  padding: 10px 0;
 }
 header nav .nav-links {
   display: flex;
@@ -69,15 +69,18 @@ header nav ul {
   gap: 2rem;
   justify-content: flex-end;
 }
+header nav ul li {
+  padding: 10px 0;
+}
+header nav ul li:hover {
+  border-bottom: 3px solid #82f9a1;
+  padding-bottom: 8px;
+}
 header nav ul li a {
   text-decoration: none;
   color: #ecf8ff;
 }
-header nav ul li a:hover {
-  border-bottom: 3px solid #82f9a1;
-  padding-bottom: 8px;
-}
-header nav ul li.active {
+header nav ul li .active {
   border-bottom: 3px solid #82f9a1;
   padding-bottom: 8px;
 }
@@ -89,8 +92,8 @@ header nav .nav-toggle a i {
 }
 
 .container {
-  padding: 3rem;
-  margin-top: 6rem;
+  padding: 5rem 3rem;
+  margin-top: 3rem;
 }
 .container .hero-section {
   line-height: 2.2;

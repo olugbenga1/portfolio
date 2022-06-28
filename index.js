@@ -21,9 +21,9 @@ const sections = document.querySelectorAll("section");
 window.addEventListener("scroll", () => {
   let current = "";
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
+    const sectionTop = section.offsetTop + 300;
     const sectionHeight = section.clientHeight;
-    if (scrollY >= sectionTop - sectionHeight / 3) {
+    if (scrollY >= sectionTop - sectionHeight) {
       current = section.getAttribute("id");
     }
   });
@@ -60,8 +60,25 @@ addScroll(contactLinkId, contact);
 // javascript to toggle nav menu
 
 const menu = document.querySelector(".menu");
-let menuItems = document.querySelectorAll(".menuItems");
+let menuItems = document.querySelectorAll(".menuItem");
 const navToggle = document.querySelector(".nav-toggle");
 const openIcon = document.querySelector(".open-icon");
-const closeIcon = documemt.querySelector(".close-icon");
-const current = document.querySelector(".active");
+const closeIcon = document.querySelector(".close-icon");
+
+function toggleMenu() {
+  if (menu.classList.contains("show-menu")) {
+    menu.classList.remove("show-menu");
+    closeIcon.style.display = "none";
+    openIcon.style.display = "block";
+  } else {
+    menu.classList.add("show-menu");
+    closeIcon.style.display = "block";
+    openIcon.style.display = "none";
+  }
+}
+
+navToggle.addEventListener("click", toggleMenu);
+
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener("click", toggleMenu);
+});

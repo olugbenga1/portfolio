@@ -97,24 +97,38 @@ header nav ul .active {
 .container .hero-section h1 {
   color: #82f9a1;
 }
+.container .hero-section p {
+  max-width: 80%;
+}
 .container .hero-section .twitter {
   color: #1da1f2;
 }
 .container .hero-section .github {
   color: #5e8ca7;
 }
+.container .projects-section {
+  margin: 0 auto;
+  max-width: 100%;
+}
 .container .projects-section .card-wrapper {
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 2rem;
+  max-width: 100%;
   margin-top: 2rem;
 }
 .container .projects-section .card-wrapper .card {
   border-radius: 5px;
   box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.27);
   max-width: 100%;
+  min-width: 20%;
   padding: 2rem;
+}
+.container .projects-section .card-wrapper .card h3 {
+  justify-content: flex-end;
 }
 .container .projects-section .card-wrapper .card h4 {
   font-weight: 500;
@@ -219,5 +233,67 @@ header nav ul .active {
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   nav .nav-links .nav-toggle {
     display: none;
+  }
+}
+@media only screen and (min-width: 993px) {
+  header {
+    padding: 2rem 5rem;
+  }
+  header nav {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  header nav .nav-links .nav-toggle {
+    display: none;
+  }
+
+  .container button {
+    padding: 1.1rem 3rem;
+    font-size: 1.1rem;
+  }
+  .container p {
+    font-size: 1.1rem;
+  }
+  .container .hero-section {
+    padding: 2rem 6rem;
+    text-align: center;
+  }
+  .container .hero-section p {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  .container .projects-section {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .container .projects-section .card-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 3rem;
+  }
+  .container .projects-section .card-wrapper .card {
+    max-width: 40%;
+  }
+  .container .skills-section {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .container .skills-section .skills-div-wrapper {
+    max-width: 50%;
+  }
+  .container .blog-section {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .container .contact-section {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .container .contact-section .contact-section p {
+    max-width: 50%;
+  }
+
+  .footer-section p {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

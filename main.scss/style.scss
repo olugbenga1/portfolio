@@ -160,6 +160,10 @@ header {
       color: $glow20-color;
     }
 
+    p {
+      max-width: 80%;
+    }
+
     .twitter {
       color: #1da1f2;
     }
@@ -170,17 +174,27 @@ header {
   }
 
   .projects-section {
+    margin: 0 auto;
+    max-width: 100%;
     .card-wrapper {
+      align-items: center;
+      justify-content: center;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 3rem;
+      gap: 2rem;
+      max-width: 100%;
       margin-top: 2rem;
       .card {
         border-radius: 5px;
         box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.27);
         max-width: 100%;
+        min-width: 20%;
         padding: 2rem;
+
+        h3 {
+          justify-content: flex-end;
+        }
 
         h4 {
           font-weight: 500;
@@ -303,6 +317,82 @@ header {
       .nav-toggle {
         display: none;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  header {
+    padding: 2rem 5rem;
+    nav {
+      max-width: 90%;
+      margin: 0 auto;
+      .nav-links {
+        .nav-toggle {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .container {
+    button {
+      padding: 1.1rem 3rem;
+      font-size: 1.1rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+    .hero-section {
+      padding: 2rem 6rem;
+      text-align: center;
+      p {
+        max-width: 50%;
+        margin: 0 auto;
+      }
+    }
+
+    .projects-section {
+      text-align: center;
+      margin-top: 3rem;
+      .card-wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 3rem;
+        .card {
+          // max-width: 40%;
+          max-width: 40%;
+        }
+      }
+    }
+
+    .skills-section {
+      text-align: center;
+      margin-top: 3rem;
+
+      .skills-div-wrapper {
+        max-width: 50%;
+      }
+    }
+
+    .blog-section {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .contact-section {
+      text-align: center;
+      margin-top: 3rem;
+
+      .contact-section p {
+        max-width: 50%;
+      }
+    }
+  }
+
+  .footer-section {
+    p {
+      font-size: 1rem;
     }
   }
 }

@@ -40,12 +40,6 @@ window.addEventListener("scroll", () => {
       }
     });
   });
-  // navLinks.forEach((link) => {
-  //   link.classList.remove("active");
-  //   if (link.classList.contains(current)) {
-  //     link.classList.add("active");
-  //   }
-  // });
 });
 
 // Add scroll function

@@ -21,18 +21,31 @@ const sections = document.querySelectorAll("section");
 window.addEventListener("scroll", () => {
   let current = "";
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop + 300;
+    const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    if (scrollY >= sectionTop - sectionHeight) {
+    const topOfPage = hero.offsetTop;
+
+    if (scrollY <= topOfPage) {
+      current = hero.getAttribute("id");
+    } else if (scrollY >= sectionTop - sectionHeight) {
       current = section.getAttribute("id");
     }
+
+    console.log(current);
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.classList.contains(current)) {
+        link.classList.add("active");
+      }
+    });
   });
-  navLinks.forEach((link) => {
-    link.classList.remove("active");
-    if (link.classList.contains(current)) {
-      link.classList.add("active");
-    }
-  });
+  // navLinks.forEach((link) => {
+  //   link.classList.remove("active");
+  //   if (link.classList.contains(current)) {
+  //     link.classList.add("active");
+  //   }
+  // });
 });
 
 // Add scroll function

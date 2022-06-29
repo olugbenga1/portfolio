@@ -163,12 +163,12 @@ header nav ul .active {
   transform: scale(1.03);
 }
 .container .blog-wrapper {
-  padding: 3rem 2rem;
+  padding: 3rem 0;
 }
 
 .contact-section p {
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 3rem 0;
 }
 
 .footer-section {
@@ -289,8 +289,8 @@ header nav ul .active {
     text-align: center;
     margin-top: 3rem;
   }
-  .container .contact-section .contact-section p {
-    max-width: 50%;
+  .container .contact-section p {
+    max-width: 60%;
   }
 
   .footer-section p {
